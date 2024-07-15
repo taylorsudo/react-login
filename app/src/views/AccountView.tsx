@@ -6,11 +6,11 @@ const AccountView = () => {
   ]
 
   return (<div>
-    <h1>Account View</h1>
+    <h1 className="p-2">Account View</h1>
     {data.map(dataElement => {
-      return (<div>
-        <span>{dataElement.label}</span>
-        <span>{dataElement.content}</span>
+      return (<div className="p-2">
+        <span className="p-2">{dataElement.label}</span>
+        <span className="p-2">{dataElement.content}</span>
         </div>)
     })}
     </div>)

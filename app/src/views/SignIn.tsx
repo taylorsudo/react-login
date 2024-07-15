@@ -9,8 +9,8 @@ export type FormInput = {
 export const GenerateFormElements = (formInputs: FormInput[]) => {
   return formInputs.map(formInput => {
   return (
-    <div>
-      <label>{formInput.label}</label>
+    <div className="p-2">
+      <label className="p-2">{formInput.label}</label>
       <input id={formInput.id} type={formInput.type} />
     </div>
   )
@@ -50,7 +50,7 @@ const SignIn = () => {
   }
 
   return (<form onSubmit={signIn}>
-    <h1>Sign in</h1>
+    <h1 className="p-2">Sign in</h1>
     {GenerateFormElements(formInputs)}
     <button>Submit</button>
   </form>)

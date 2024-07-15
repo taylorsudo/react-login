@@ -40,7 +40,7 @@ const SignUp = () => {
   }
 
   return (<form onSubmit={signUp}>
-    <h1>Sign up</h1>
+    <h1 className="p-2">Sign up</h1>
     {GenerateFormElements(formInputs)}
     <button>Submit</button>
   </form>)
